@@ -1,19 +1,19 @@
 <template>
-  <img v-if="img" :src="img" alt="bg">
+    <img v-if="img" :src="img" alt="bg">
 
-  <div class="bg-dark"></div>
-  <div class="indecision-container">
-    <input 
-        v-model="question" 
-        type="text" 
-        placeholder="Hazme una pregunta">
-    <p>Recuerda terminar con un signo de interrogacion (?)</p>
+    <div class="bg-dark"></div>
+    <div class="indecision-container">
+        <input 
+            v-model="question" 
+            type="text" 
+            placeholder="Hazme una pregunta">
+        <p>Recuerda terminar con un signo de interrogacion (?)</p>
 
-    <div v-if="isValidQuestion">
-        <h2>{{ question }}</h2>
-        <h1>{{ answer }}</h1>
+        <div v-if="isValidQuestion">
+            <h2>{{ question }}</h2>
+            <h1>{{ answer }}</h1>
+        </div>
     </div>
-  </div>
 </template>
 
 <script>
